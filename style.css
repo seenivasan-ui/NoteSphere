@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.sidebar h2 {
+  margin-bottom: 12px;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  color: #000;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sidebar li {
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Editor */
+.editor {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.toolbar {
+  margin-bottom: 12px;
+}
+
+.toolbar button {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.body {
+  min-height: 400px;
+  line-height: 1.7;
+  outline: none;
+}
